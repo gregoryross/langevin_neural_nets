@@ -215,7 +215,7 @@ def smc_data_addition(inputs, target, nreplicas, layer_shapes, draw_param_scale,
     nn: GaussianDenseNN
         The Bayesian nueral network that has been powering the sampling.
     replica_unknowns: list of jax arrays
-        The parameters of the SMC replicas/particules. Can be slotted into the nn.
+        The parameters of the SMC replicas/particles. Can be slotted into the nn.
     sample_sizes: list
         A record of the effective sample sizes
     resample_times: list
@@ -301,9 +301,6 @@ def smc_geometric_likelihood(inputs, target, nreplicas, layer_shapes, nstages, d
     """
     Function to perform sequential Monte Carlo fitting of a neural net in which the data is geometrically
     annealed into the posterior.
-
-    As decribed by Ridgeway and Madigan in "A Sequential Monte Carlo Method for Bayesian Analysis of
-    Massive Datasets", 2003, Data Min Knowl Discov. 301–319.
 
     Parameters
     ----------
